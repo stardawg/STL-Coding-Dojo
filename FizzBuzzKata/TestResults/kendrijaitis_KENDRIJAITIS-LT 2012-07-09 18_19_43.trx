@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7a92cabe-1f42-4cab-b816-a47fa269033e" name="kendrijaitis@KENDRIJAITIS-LT 2012-07-09 18:19:43" runUser="BAM-STL\kendrijaitis" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1c8dc479-6421-4466-af05-95897d203bed">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="kendrijaitis_KENDRIJAITIS-LT 2012-07-09 18_19_43">
+      <DeploymentItem filename="c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKata\bin\Debug\FizzBuzzKata.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-09T18:19:43.4069966-05:00" queuing="2012-07-09T18:19:44.5740633-05:00" start="2012-07-09T18:19:44.6530678-05:00" finish="2012-07-09T18:20:10.1935287-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="NumberPrintsTest" storage="c:\users\kendrijaitis\documents\visual studio 2010\projects\fizzbuzzkata\fizzbuzzkatatestbetter\bin\debug\fizzbuzzkatatestbetter.dll" id="397d1718-32cc-5b4b-433a-322a3822749a">
+      <Execution id="dd32a0f1-b8e7-43b1-9ab7-7856a4946102" />
+      <TestMethod codeBase="c:/users/kendrijaitis/documents/visual studio 2010/Projects/FizzBuzzKata/FizzBuzzKataTestBetter/bin/Debug/FizzBuzzKataTestBetter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FizzBuzzKataTestBetter.FizzBuzzTest, FizzBuzzKataTestBetter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumberPrintsTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="397d1718-32cc-5b4b-433a-322a3822749a" executionId="dd32a0f1-b8e7-43b1-9ab7-7856a4946102" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="dd32a0f1-b8e7-43b1-9ab7-7856a4946102" testId="397d1718-32cc-5b4b-433a-322a3822749a" testName="NumberPrintsTest" computerName="KENDRIJAITIS-LT" duration="00:00:05.5735199" startTime="2012-07-09T18:19:44.7190716-05:00" endTime="2012-07-09T18:20:09.5934944-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd32a0f1-b8e7-43b1-9ab7-7856a4946102">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method FizzBuzzKataTestBetter.FizzBuzzTest.NumberPrintsTest threw exception: 
+System.NotImplementedException: The method or operation is not implemented.</Message>
+          <StackTrace>    at FizzBuzzKata.FizzBuzz.PrintNumber(Int32 number) in c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKata\FizzBuzz.cs:line 13
+   at FizzBuzzKataTestBetter.FizzBuzzTest.NumberPrintsTest() in c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\FizzBuzzTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

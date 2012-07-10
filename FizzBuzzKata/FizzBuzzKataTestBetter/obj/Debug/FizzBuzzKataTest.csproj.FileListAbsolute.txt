@@ -1,0 +1,7 @@
+c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKataTestBetter.dll
+c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKataTestBetter.pdb
+c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKata.exe
+c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKata.pdb
+c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\ResolveAssemblyReference.cache
+c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\FizzBuzzKataTestBetter.dll
+c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\FizzBuzzKataTestBetter.pdb
