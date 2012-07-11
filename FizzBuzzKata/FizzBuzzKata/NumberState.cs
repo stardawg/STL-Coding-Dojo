@@ -5,13 +5,13 @@ using System.Text;
 
 namespace FizzBuzzKata
 {
-    class FizzBuzzState : FizzBuzzStateBase
+    class NumberState : FizzBuzzStateBase
     {
-        internal FizzBuzzState(FizzBuzz context) : base(context) { }
+        internal NumberState(FizzBuzz context) : base(context) { }
 
         internal override string PrintNumber()
         {
-            return "FizzBuzz";
+            return _context.Number.ToString();
         }
     }
 }

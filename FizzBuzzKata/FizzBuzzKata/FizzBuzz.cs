@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections;
 
 namespace FizzBuzzKata
 {
@@ -10,82 +11,41 @@ namespace FizzBuzzKata
         public const string FIZZ = "Fizz";
         public const string BUZZ = "Buzz";
 
-        public Dictionary<int, Func<int, string>> SomethingToStore;
+        private FizzBuzzStateBase _state;
+        private Dictionary<int, FizzBuzzStateBase> _printStateMachine;
+
+
+        public int Number { get; private set; }
 
         public FizzBuzz()
         {
-            SomethingToStore = new Dictionary<int, Func<int, string>>();
-
-            SomethingToStore.Add(3, FizzBuzz);
-            SomethingToStore.Add(2, Fizz);
-            SomethingToStore.Add(1, Buzz);
-            SomethingToStore.Add(0, NumberToString);
+            _state = new FizzBuzzStateBase(this);
+            _printStateMachine = new Dictionary<int, FizzBuzzStateBase>
+            {
+                {0, new NumberState(this)},
+                {1, new FizzState(this)},
+                {10, new BuzzState(this)},
+                {11, new FizzBuzzState(this)}
+            };
 
         }
 
-        public string Fizz(int something)
+        public string PrintNumber(int number)
         {
-            return "Fizz";
+            Number = number;
+            int lowBit = Convert.ToInt32(number % 3 == 0);
+            int highBit = Convert.ToInt32(number % 5 == 0);
+            int exclusivOrFlag = lowBit ^ highBit;
+            int andFlag = lowBit & highBit;
+            int rightFlag = 0 >> lowBit >> highBit;
+            int leftFlag = 0 << lowBit << highBit;
+            int orFlag = lowBit | highBit;
+            int myFlag = ~lowBit & ~highBit;
+            BitArray bits = new BitArray(new bool[] { lowBit == 0, highBit == 0 });
+            bits.ToString();
+
+            _state = _printStateMachine[lowBit + (highBit * 10)];
+            return _state.PrintNumber();
         }
-
-        public string Buzz(int something)
-        {
-            return "Buzz";
-        }
-
-        public string NumberToString(int something)
-        {
-            return something.ToString();
-        }
-
-        public string FizzBuzz(int something)
-        {
-            return "FizzBuzz";
-        }
-
-
-    
-
-        public string  PrintNumber(int number)
-        {
-            bool[] something = { (number % 3 == 0), (number % 5 == 0) };
-            something.ToInt();
-            
-            var key = (new System.Collections.BitArray((number % 3==0), (number % 5==0))); 
-            return SomethingToStore[key].Invoke(number);   
-
-
-
-
-
-
-
-
-            //string returnString = string.Empty;
-            //if (number % 3 == 0)
-            //    returnString += FIZZ;
-            //if (number % 5 == 0)
-            //    returnString += BUZZ;
-            
-            //if(returnString==string.Empty)
-            //    returnString= number.ToString();
-
-            //return returnString;
-
-            //return FizzBuzzState.GetInstance(number).PrintNumber(number);
-
-            //return string.Format("{0}{1}", newMethod(3, number, FIZZ), newMethod(5, number, BUZZ));
-
-
-
-        }
-
-        public string newMethod(int divorsnumber, int number, string something)
-        {
-            return (number % divorsnumber)==0 ? something : string.Empty;
-        }
-
-
-        
     }
 }

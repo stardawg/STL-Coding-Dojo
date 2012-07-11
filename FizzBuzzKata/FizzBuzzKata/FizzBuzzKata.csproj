@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BothState.cs" />
+    <Compile Include="FizzBuzzState.cs" />
     <Compile Include="BuzzState.cs" />
     <Compile Include="FizzBuzz.cs" />
-    <Compile Include="FizzBuzzState.cs" />
+    <Compile Include="FizzBuzzStateBase.cs" />
     <Compile Include="FizzState.cs" />
-    <Compile Include="NumberFizzBuzzState.cs" />
+    <Compile Include="NumberState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

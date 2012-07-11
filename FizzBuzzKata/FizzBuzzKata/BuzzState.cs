@@ -5,9 +5,11 @@ using System.Text;
 
 namespace FizzBuzzKata
 {
-    class BuzzState : FizzBuzzState
+    class BuzzState : FizzBuzzStateBase
     {
-        internal override string PrintNumber(int number)
+        internal BuzzState(FizzBuzz context) : base(context) { }
+
+        internal override string PrintNumber()
         {
             return "Buzz";
         }

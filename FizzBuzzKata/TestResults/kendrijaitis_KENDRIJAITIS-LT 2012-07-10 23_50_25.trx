@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5613f467-db57-473c-93a2-fed36f42ccd6" name="kendrijaitis@KENDRIJAITIS-LT 2012-07-10 23:50:25" runUser="BAM-STL\kendrijaitis" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1c8dc479-6421-4466-af05-95897d203bed">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="kendrijaitis_KENDRIJAITIS-LT 2012-07-10 23_50_25">
+      <DeploymentItem filename="C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKata\bin\Debug\FizzBuzzKata.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-10T23:50:25.5243794-05:00" queuing="2012-07-10T23:50:27.7706040-05:00" start="2012-07-10T23:50:27.9376207-05:00" finish="2012-07-10T23:50:58.3466613-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="3" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="KENDRIJAITIS-LT" outcome="Error" timestamp="2012-07-10T23:50:58.3446611-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="NumberPrintsTest" storage="c:\_development\stl-coding-dojo\fizzbuzzkata\fizzbuzzkatatestbetter\bin\debug\fizzbuzzkatatestbetter.dll" id="397d1718-32cc-5b4b-433a-322a3822749a">
+      <Execution id="1e2569d5-6d6f-4b09-ba9c-a7742f5a2604" />
+      <TestMethod codeBase="C:/_Development/STL-Coding-Dojo/FizzBuzzKata/FizzBuzzKataTestBetter/bin/Debug/FizzBuzzKataTestBetter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FizzBuzzKataTestBetter.FizzBuzzTest, FizzBuzzKataTestBetter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumberPrintsTest" />
+    </UnitTest>
+    <UnitTest name="NumberDivisibleBy5ReturnsBuzzTest" storage="c:\_development\stl-coding-dojo\fizzbuzzkata\fizzbuzzkatatestbetter\bin\debug\fizzbuzzkatatestbetter.dll" id="a540e761-5297-4fb5-ee30-8df83a97a4e1">
+      <Execution id="e23d2a2e-b7fa-42b5-ba81-26acb4160324" />
+      <TestMethod codeBase="C:/_Development/STL-Coding-Dojo/FizzBuzzKata/FizzBuzzKataTestBetter/bin/Debug/FizzBuzzKataTestBetter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FizzBuzzKataTestBetter.FizzBuzzTest, FizzBuzzKataTestBetter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumberDivisibleBy5ReturnsBuzzTest" />
+    </UnitTest>
+    <UnitTest name="NumberDivisibleBy3ReturnsFizzTest" storage="c:\_development\stl-coding-dojo\fizzbuzzkata\fizzbuzzkatatestbetter\bin\debug\fizzbuzzkatatestbetter.dll" id="3d8812ed-843a-fec6-977b-7dc853d72370">
+      <Execution id="1aa21dd9-a6a2-4ce8-b195-b74ef915dce2" />
+      <TestMethod codeBase="C:/_Development/STL-Coding-Dojo/FizzBuzzKata/FizzBuzzKataTestBetter/bin/Debug/FizzBuzzKataTestBetter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FizzBuzzKataTestBetter.FizzBuzzTest, FizzBuzzKataTestBetter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumberDivisibleBy3ReturnsFizzTest" />
+    </UnitTest>
+    <UnitTest name="NumberDivisbleBy3And5ReturnsFizzBuzz" storage="c:\_development\stl-coding-dojo\fizzbuzzkata\fizzbuzzkatatestbetter\bin\debug\fizzbuzzkatatestbetter.dll" id="0d1d3883-ec55-4c92-abc1-6f6f614555f8">
+      <Execution id="d1874bc8-27d9-4246-bb6d-edf582fc31c1" />
+      <TestMethod codeBase="C:/_Development/STL-Coding-Dojo/FizzBuzzKata/FizzBuzzKataTestBetter/bin/Debug/FizzBuzzKataTestBetter.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="FizzBuzzKataTestBetter.FizzBuzzTest, FizzBuzzKataTestBetter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumberDivisbleBy3And5ReturnsFizzBuzz" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0d1d3883-ec55-4c92-abc1-6f6f614555f8" executionId="d1874bc8-27d9-4246-bb6d-edf582fc31c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="397d1718-32cc-5b4b-433a-322a3822749a" executionId="1e2569d5-6d6f-4b09-ba9c-a7742f5a2604" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d8812ed-843a-fec6-977b-7dc853d72370" executionId="1aa21dd9-a6a2-4ce8-b195-b74ef915dce2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a540e761-5297-4fb5-ee30-8df83a97a4e1" executionId="e23d2a2e-b7fa-42b5-ba81-26acb4160324" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d1874bc8-27d9-4246-bb6d-edf582fc31c1" testId="0d1d3883-ec55-4c92-abc1-6f6f614555f8" testName="NumberDivisbleBy3And5ReturnsFizzBuzz" computerName="KENDRIJAITIS-LT" duration="00:00:30.2680265" startTime="2012-07-10T23:50:28.0776347-05:00" endTime="2012-07-10T23:50:58.3456612-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1874bc8-27d9-4246-bb6d-edf582fc31c1">
+    </UnitTestResult>
+    <UnitTestResult executionId="1e2569d5-6d6f-4b09-ba9c-a7742f5a2604" testId="397d1718-32cc-5b4b-433a-322a3822749a" testName="NumberPrintsTest" computerName="KENDRIJAITIS-LT" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e2569d5-6d6f-4b09-ba9c-a7742f5a2604">
+    </UnitTestResult>
+    <UnitTestResult executionId="1aa21dd9-a6a2-4ce8-b195-b74ef915dce2" testId="3d8812ed-843a-fec6-977b-7dc853d72370" testName="NumberDivisibleBy3ReturnsFizzTest" computerName="KENDRIJAITIS-LT" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1aa21dd9-a6a2-4ce8-b195-b74ef915dce2">
+    </UnitTestResult>
+    <UnitTestResult executionId="e23d2a2e-b7fa-42b5-ba81-26acb4160324" testId="a540e761-5297-4fb5-ee30-8df83a97a4e1" testName="NumberDivisibleBy5ReturnsBuzzTest" computerName="KENDRIJAITIS-LT" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e23d2a2e-b7fa-42b5-ba81-26acb4160324">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -5,3 +5,10 @@ c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuz
 c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\ResolveAssemblyReference.cache
 c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\FizzBuzzKataTestBetter.dll
 c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\FizzBuzzKataTestBetter.pdb
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKataTestBetter.dll
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKataTestBetter.pdb
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKata.exe
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKataTestBetter\bin\Debug\FizzBuzzKata.pdb
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\ResolveAssemblyReference.cache
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\FizzBuzzKataTestBetter.dll
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKataTestBetter\obj\Debug\FizzBuzzKataTestBetter.pdb

@@ -3,3 +3,8 @@ c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuz
 c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKata\obj\x86\Debug\ResolveAssemblyReference.cache
 c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKata\obj\x86\Debug\FizzBuzzKata.exe
 c:\users\kendrijaitis\documents\visual studio 2010\Projects\FizzBuzzKata\FizzBuzzKata\obj\x86\Debug\FizzBuzzKata.pdb
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKata\obj\x86\Debug\FizzBuzzKata.exe
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKata\obj\x86\Debug\FizzBuzzKata.pdb
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKata\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKata\bin\Debug\FizzBuzzKata.exe
+C:\_Development\STL-Coding-Dojo\FizzBuzzKata\FizzBuzzKata\bin\Debug\FizzBuzzKata.pdb
