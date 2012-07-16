@@ -35,14 +35,6 @@ namespace FizzBuzzKata
             Number = number;
             int lowBit = Convert.ToInt32(number % 3 == 0);
             int highBit = Convert.ToInt32(number % 5 == 0);
-            int exclusivOrFlag = lowBit ^ highBit;
-            int andFlag = lowBit & highBit;
-            int rightFlag = 0 >> lowBit >> highBit;
-            int leftFlag = 0 << lowBit << highBit;
-            int orFlag = lowBit | highBit;
-            int myFlag = ~lowBit & ~highBit;
-            BitArray bits = new BitArray(new bool[] { lowBit == 0, highBit == 0 });
-            bits.ToString();
 
             _state = _printStateMachine[lowBit + (highBit * 10)];
             return _state.PrintNumber();
