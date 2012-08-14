@@ -46,15 +46,13 @@ namespace Simulation.Test
         #endregion
 
 
-        /// <summary>
-        ///A test for Game Constructor
-        ///</summary>
-        [TestMethod()]
-        public void GameSimulateTest()
+        [TestMethod]
+        public void ANewGameHasValidBoardSize()
         {
-            Game target = new Game(5, 5);
+            var size = new Size(5, 5);
+            var target = new Game(size);
 
-            Assert.AreEqual(target.Cells.Count, 25);
+            Assert.AreEqual(target.Board.Size, size);
         }
     }
 }
