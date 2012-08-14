@@ -30,6 +30,5 @@ namespace Simulation
             _rows = new List<object>(new object[boardSize.Rows]);
             
         }
-
     }
 }

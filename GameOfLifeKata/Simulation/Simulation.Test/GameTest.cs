@@ -54,5 +54,15 @@ namespace Simulation.Test
 
             Assert.AreEqual(target.Board.Size, size);
         }
+
+        [TestMethod]
+        public void ICanSetInitialBoardState()
+        {
+            var target = new Game(new Size(4, 8));
+
+            target.Seed(@"............*......**...........");
+
+            Assert.AreEqual("*", target.Board[2, 5]);
+        }
     }
 }
