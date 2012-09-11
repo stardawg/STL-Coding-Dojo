@@ -1,0 +1,4 @@
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\KataGameOfLife\bin\Debug\KataGameOfLife.dll
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\KataGameOfLife\bin\Debug\KataGameOfLife.pdb
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\KataGameOfLife\obj\Debug\KataGameOfLife.dll
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\KataGameOfLife\obj\Debug\KataGameOfLife.pdb

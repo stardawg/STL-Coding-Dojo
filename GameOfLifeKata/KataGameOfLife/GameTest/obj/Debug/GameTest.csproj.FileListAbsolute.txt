@@ -1,0 +1,7 @@
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\GameTest\bin\Debug\GameTest.dll
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\GameTest\bin\Debug\GameTest.pdb
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\GameTest\bin\Debug\KataGameOfLife.dll
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\GameTest\bin\Debug\KataGameOfLife.pdb
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\GameTest\obj\Debug\GameTest.csprojResolveAssemblyReference.cache
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\GameTest\obj\Debug\GameTest.dll
+C:\_Development\STL-Coding-Dojo\GameOfLifeKata\KataGameOfLife\GameTest\obj\Debug\GameTest.pdb
