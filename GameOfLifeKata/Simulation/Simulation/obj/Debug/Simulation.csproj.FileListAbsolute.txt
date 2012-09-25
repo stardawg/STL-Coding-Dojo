@@ -1,4 +1,0 @@
-C:\_Development\STL-Coding-Dojo\GameOfLifeKata\Simulation\Simulation\bin\Debug\Simulation.dll
-C:\_Development\STL-Coding-Dojo\GameOfLifeKata\Simulation\Simulation\bin\Debug\Simulation.pdb
-C:\_Development\STL-Coding-Dojo\GameOfLifeKata\Simulation\Simulation\obj\Debug\Simulation.dll
-C:\_Development\STL-Coding-Dojo\GameOfLifeKata\Simulation\Simulation\obj\Debug\Simulation.pdb
