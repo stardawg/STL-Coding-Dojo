@@ -66,27 +66,27 @@ namespace KataGameOfLife
         }
         private bool IsCellToLeftAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            return IsCellValidAndAlive(currBoardState, lineIndex, cellIndex-1);
+            return IsNeighborCellValid(currBoardState, lineIndex, cellIndex-1);
         }
 
         private bool IsCellToRightAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            return IsCellValidAndAlive(currBoardState, lineIndex, cellIndex + 1);
+            return IsNeighborCellValid(currBoardState, lineIndex, cellIndex + 1);
         }
 
         private bool IsCellToAboveAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            return IsCellValidAndAlive(currBoardState, lineIndex-1, cellIndex );
+            return IsNeighborCellValid(currBoardState, lineIndex-1, cellIndex );
         }
 
         private bool IsCellToBelowAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            return IsCellValidAndAlive(currBoardState, lineIndex+1, cellIndex);
+            return IsNeighborCellValid(currBoardState, lineIndex+1, cellIndex);
         }
 
-        private bool IsCellValidAndAlive(char[][] currBoardState, int lineIndex, int cellIndex)
+        private bool IsNeighborCellValid(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            if (IsValidNeighbor(lineIndex, cellIndex))
+            if (IsCellValid(lineIndex, cellIndex))
             {
                 return (currBoardState[lineIndex][cellIndex] == '*');
             }
@@ -95,7 +95,7 @@ namespace KataGameOfLife
                 return false;
             }
         }
-        private bool IsValidNeighbor(int x, int y)
+        private bool IsCellValid(int x, int y)
         {
             if (y > 0 
                 && x > 0
