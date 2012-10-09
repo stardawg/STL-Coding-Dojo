@@ -15,19 +15,22 @@ namespace KataGameOfLife
         public void Load(string board)
         {
             Board = board;
-
             _splitboard = Board
                 .Split(new[] { Environment.NewLine }, StringSplitOptions.None)
                 .Select(line => line.Trim().ToCharArray())
                 .ToArray();
-
             Size = new Size(_splitboard.Length, _splitboard[0].Length);
+            int initColumnLength = _splitboard[0].Length;
+            foreach (var row in _splitboard)
+            {
+                if (row.Length != initColumnLength)
+                    throw new InitializationException();
+            }
         }
 
         public void RunGeneration()
         {
             var _oldSplitBoard = _splitboard.Select(s => s.ToArray()).ToArray();
-
             for (int lineIndex = 0; lineIndex < _oldSplitBoard.Length; lineIndex++)
             {
                 var line = _oldSplitBoard[lineIndex];
@@ -36,7 +39,7 @@ namespace KataGameOfLife
                     if (_oldSplitBoard[lineIndex][cellIndex] == '*')
                     {
                         int neighborCount = GetNeighborCount(_oldSplitBoard, lineIndex,cellIndex);
-                        if(neighborCount<2)
+                        if(neighborCount < 2 || neighborCount == 4)
                         {
                             KillCell(lineIndex, cellIndex);
                         }
@@ -54,18 +57,17 @@ namespace KataGameOfLife
 
         private int GetNeighborCount(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            return Convert.ToInt32(IsCellToLeftAlive(currBoardState, lineIndex, cellIndex)) +
-                        Convert.ToInt32(IsCellToRightAlive(currBoardState, lineIndex, cellIndex)) +
-                        Convert.ToInt32(IsCellToAboveAlive(currBoardState, lineIndex, cellIndex)) +
-                        Convert.ToInt32(IsCellToBelowAlive(currBoardState, lineIndex, cellIndex));
-
+            int leftAlive = Convert.ToInt32(IsCellToLeftAlive(currBoardState, lineIndex, cellIndex));
+            int rightAlive = Convert.ToInt32(IsCellToRightAlive(currBoardState, lineIndex, cellIndex));
+            int aboveAlive = Convert.ToInt32(IsCellToAboveAlive(currBoardState, lineIndex, cellIndex));
+            int belowAlive = Convert.ToInt32(IsCellToBelowAlive(currBoardState, lineIndex, cellIndex));
+         
+            return leftAlive + rightAlive + aboveAlive + belowAlive;
         }
         private bool IsCellToLeftAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
             return IsCellValidAndAlive(currBoardState, lineIndex, cellIndex-1);
         }
-
-
 
         private bool IsCellToRightAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
@@ -79,14 +81,14 @@ namespace KataGameOfLife
 
         private bool IsCellToBelowAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            return IsCellValidAndAlive(currBoardState, lineIndex+1, cellIndex - 1);
+            return IsCellValidAndAlive(currBoardState, lineIndex+1, cellIndex);
         }
 
         private bool IsCellValidAndAlive(char[][] currBoardState, int lineIndex, int cellIndex)
         {
-            if (IsValidNeighbor(lineIndex, cellIndex - 1))
+            if (IsValidNeighbor(lineIndex, cellIndex))
             {
-                return (currBoardState[lineIndex][cellIndex - 1] == '*');
+                return (currBoardState[lineIndex][cellIndex] == '*');
             }
             else
             {
