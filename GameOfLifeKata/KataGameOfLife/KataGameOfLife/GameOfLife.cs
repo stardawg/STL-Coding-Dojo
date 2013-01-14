@@ -95,12 +95,13 @@ namespace KataGameOfLife
                 return false;
             }
         }
-        private bool IsCellValid(int x, int y)
+        private bool IsCellValid(int lineIndex, int cellIndex)
         {
-            if (y > 0 
-                && x > 0
-                && Size.Height > y
-                && Size.Width > x)
+            if (cellIndex >= 0 
+                && lineIndex >= 0
+                && Size.Width > cellIndex
+                && Size.Height > lineIndex
+                )
             {
                 return true;
             }

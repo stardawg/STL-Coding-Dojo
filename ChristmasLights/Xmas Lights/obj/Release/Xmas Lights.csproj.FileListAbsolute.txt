@@ -1,0 +1,8 @@
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\bin\Release\Xmas Lights.exe.config
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\bin\Release\Xmas Lights.exe
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\bin\Release\Xmas Lights.pdb
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\obj\Release\JamesAllen.XmasLights.Main.resources
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\obj\Release\JamesAllen.XmasLights.Properties.Resources.resources
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\obj\Release\Xmas Lights.csproj.GenerateResource.Cache
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\obj\Release\Xmas Lights.exe
+C:\_Development\STL-Coding-Dojo\ChristmasLights\Xmas Lights\obj\Release\Xmas Lights.pdb

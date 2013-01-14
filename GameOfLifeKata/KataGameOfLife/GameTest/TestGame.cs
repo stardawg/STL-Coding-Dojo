@@ -100,6 +100,25 @@ namespace GameTest
         }
 
         [TestMethod]
+        public void ACellWith2NeighborsAliveLives()
+        {
+            var game = new GameOfLife();
+            game.Load(
+@"...
+***
+..."
+);
+            game.RunGeneration();
+
+            string cells = 
+@"...
+.*.
+...";
+
+            Assert.AreEqual(cells, game.Board);
+        }
+
+        [TestMethod]
         public void ACellWithExactlyOneNeighborDies()
         {
             var game = new GameOfLife();
