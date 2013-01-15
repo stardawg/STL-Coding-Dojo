@@ -23,34 +23,38 @@ namespace GameTest
 ...**............................
 ........";
 
+        private GameOfLife target;
+
+        [TestInitialize()]
+        public void setupTest()
+        {
+            target = new GameOfLife();
+        }
 
         #region Game Load Tests
         [TestMethod]
         public void ICanLoadAGameBoard()
         {
-            var game = new GameOfLife();
 
-            game.Load(kataBoardWith4RowsOf8Columns);
+            target.Load(kataBoardWith4RowsOf8Columns);
         }
 
         [TestMethod]
         public void LoadedBoardHasRightSize()
         {
-            var game = new GameOfLife();
+            target.Load(kataBoardWith4RowsOf8Columns);
 
-            game.Load(kataBoardWith4RowsOf8Columns);
-
-            Assert.AreEqual(new Size(4, 8), game.Size);
+            Assert.AreEqual(new Size(4, 8), target.Size);
         }
 
         [TestMethod]
         public void ICanGetTheLoadedBoard()
         {
-            var game = new GameOfLife();
+            var target = new GameOfLife();
 
-            game.Load(kataBoardWith4RowsOf8Columns);
+            target.Load(kataBoardWith4RowsOf8Columns);
 
-            Assert.AreEqual(kataBoardWith4RowsOf8Columns, game.Board);
+            Assert.AreEqual(kataBoardWith4RowsOf8Columns, target.Board);
         }
 
         [TestMethod,
@@ -58,9 +62,9 @@ namespace GameTest
         ]
         public void IfITryToLoadAJaggedBoardGameThrowsInitializationException()
         {
-            var game = new GameOfLife();
+            
 
-            game.Load(kataBoardWithJaggedRows);
+            target.Load(kataBoardWithJaggedRows);
         }
 
         #endregion
@@ -70,68 +74,68 @@ namespace GameTest
         [TestMethod]
         public void ACellWithZeroNeighborsDies()
         {
-            var game = new GameOfLife();
+            
 
-            game.Load(
+            target.Load(
 @"...
 .*.
 ..."
             );
 
-            game.RunGeneration();
+            target.RunGeneration();
 
-            Assert.AreEqual(BOARD_3_X_3_NO_LIVE_CELLS, game.Board);
+            Assert.AreEqual(BOARD_3_X_3_NO_LIVE_CELLS, target.Board);
         }
 
         [TestMethod]
         public void ACellOnTheEdgeWithNoNeighborsDies()
         {
-            var game = new GameOfLife();
+            
 
-            game.Load(
+            target.Load(
 @"*.*
 ...
 *.*"
             );
 
-            game.RunGeneration();
+            target.RunGeneration();
 
-            Assert.AreEqual(BOARD_3_X_3_NO_LIVE_CELLS, game.Board);
+            Assert.AreEqual(BOARD_3_X_3_NO_LIVE_CELLS, target.Board);
         }
 
         [TestMethod]
         public void ACellWith2NeighborsAliveLives()
         {
-            var game = new GameOfLife();
-            game.Load(
+            
+            target.Load(
 @"...
 ***
 ..."
 );
-            game.RunGeneration();
+            target.RunGeneration();
 
             string cells = 
 @"...
 .*.
 ...";
 
-            Assert.AreEqual(cells, game.Board);
+            Assert.AreEqual(cells, target.Board);
         }
 
         [TestMethod]
         public void ACellWithExactlyOneNeighborDies()
         {
-            var game = new GameOfLife();
+            
 
-            game.Load(
+            target.Load(
 @".*.
 .*.
 ..."
             );
 
-            game.RunGeneration();
+            target.RunGeneration();
 
-            Assert.AreEqual(BOARD_3_X_3_NO_LIVE_CELLS, game.Board);
+            Assert.AreEqual(BOARD_3_X_3_NO_LIVE_CELLS, target.Board);
         }
 
         #endregion
@@ -141,9 +145,9 @@ namespace GameTest
         [TestMethod]
         public void ACellWithFourNeighborsDies()
         {
-            var game = new GameOfLife();
+            
 
-            game.Load(
+            target.Load(
 @".......
 ..***..
 ..***..
@@ -151,7 +155,7 @@ namespace GameTest
 ......."
             );
 
-            game.RunGeneration();
+            target.RunGeneration();
 
             Assert.AreEqual(
 @".......
@@ -159,7 +163,7 @@ namespace GameTest
 ..*.*..
 ..***..
 ......."
-                , game.Board);
+                , target.Board);
         }
 
 
