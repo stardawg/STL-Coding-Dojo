@@ -145,6 +145,30 @@ namespace GameTest
   
         }
 
+
+        [TestMethod]
+        public void ACellWith3NeighborsLivesAndIsDeadComesToLife()
+        {
+            setupTest();
+            target.Load(
+@".**.
+..*.
+....
+...."
+);
+
+            target.RunGeneration();
+
+            string cells =
+@"..*.
+.*..
+....
+....";
+            Assert.AreEqual(cells, target.Board);
+
+        }
+
+
         [TestMethod]
         public void ACellWithExactlyOneNeighborDies()
         {
