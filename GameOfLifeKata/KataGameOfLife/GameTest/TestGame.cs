@@ -104,7 +104,7 @@ namespace GameTest
         }
 
         [TestMethod]
-        public void ACellWith2NeighborsAliveLives()
+        public void ACellWith2NeighborsLivesAnd2NeighborsDieWhen3InAHorizontalRow()
         {
             
             target.Load(
@@ -120,6 +120,29 @@ namespace GameTest
 ...";
 
             Assert.AreEqual(cells, target.Board);
+
+        }
+
+        [TestMethod]
+        public void ACellWith2NeighborsLivesAnd2NeighborsDieWhen3InAVerticalRow()
+        {
+                      setupTest();
+            target.Load(
+@"..*.
+..*.
+..*.
+...."
+);
+
+            target.RunGeneration();
+
+            string cells = 
+@"....
+..*.
+....
+....";
+            Assert.AreEqual(cells, target.Board);
+  
         }
 
         [TestMethod]
